@@ -70,9 +70,10 @@ function App() {
                 period: '2024 - Present',
                 location: 'Singapore',
                 achievements: [
-                  'Led a team of 6 developers in building a microservices architecture that improved system performance by 40%',
-                  'Architected and implemented a real-time analytics dashboard serving 10M+ daily users',
-                  'Mentored junior developers and established code review processes that reduced bugs by 60%'
+                  'Developed service routes to integrate Salesforce APIs into the application, includes connecting to Salesforce (OAuth and Tokens), mapping fields to Salesforce Custom Object, and exporting data from app to Salesforce Object.',
+                  'Architected and implemented a real-time analytics dashboard serving 100K+ daily users',
+                  'Integrated OpenAI and Large Language Model for Text Generation in email workflows',
+                  'Implemented AI Agentic System using LangChain Tools and Agents for Automated Chat Filtering with Content Moderation',
                 ]
               },
               {
@@ -81,9 +82,9 @@ function App() {
                 period: '2022 - 2024',
                 location: 'Metro Manila, Philippines',
                 achievements: [
-                  'Built the entire frontend using React and TypeScript, increasing user engagement by 35%',
-                  'Developed REST APIs with Node.js and PostgreSQL handling 100K+ requests per day',
-                  'Implemented CI/CD pipelines using Docker and AWS, reducing deployment time by 80%'
+                  'Developed and maintained Invoicing/Billing services for TRUEMOVE Thailand and Vodafone Italy.',
+                  'Designed, developed and implemented solutions or tools for internal operation.',
+                  'Assisted/lead team to discover open source software tools that can be used to improve development process',
                 ]
               },
               {
@@ -92,9 +93,9 @@ function App() {
                 period: '2019 - 2022',
                 location: 'Cebu, Philippines',
                 achievements: [
-                  'Developed responsive web applications for Fortune 500 clients',
-                  'Collaborated with design teams to create pixel-perfect user interfaces',
-                  'Optimized application performance resulting in 50% faster load times'
+                  `Developed features for Lexmark laser printer's graphical user interface using Qt Framework and Android.`,
+                  'Pioneered the conversion from Lettuce to Robot framework for UI Test Automation.',
+                  'Part of the team that advocates Rust programming language, and the first team to implement a project using Rustlang and tools in production for Xerox.',
                 ]
               }
             ].map((job, index) => (
@@ -142,11 +143,11 @@ function App() {
             {[
               {
                 category: 'Frontend Development',
-                skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'JavaScript', 'HTML5', 'CSS3']
+                skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'JavaScript', 'HTML5', 'CSS3', 'Qt Framework']
               },
               {
                 category: 'Backend Development',
-                skills: ['Node.js', 'Express.js', 'Python', 'PostgreSQL', 'MongoDB', 'REST APIs', 'GraphQL']
+                skills: ['Node.js', 'Express.js', 'Python', 'PostgreSQL', 'MongoDB', 'REST APIs', 'GraphQL', 'Elasticsearch']
               },
               {
                 category: 'DevOps & Tools',
@@ -179,14 +180,14 @@ function App() {
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <Award className="w-4 h-4 text-white" />
             </div>
-            Education & Certifications
+            Education
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-6">
-                <h4 className="font-semibold text-foreground mb-2">Bachelor of Computer Science</h4>
-                <p className="text-primary font-medium mb-2">University of California, Berkeley</p>
-                <p className="text-muted-foreground text-sm">2012 - 2016 | GPA: 3.8/4.0</p>
+                <h4 className="font-semibold text-foreground mb-2">Bachelor of Science in Computer Engineering</h4>
+                <p className="text-primary font-medium mb-2">University of San Carlos</p>
+                <p className="text-muted-foreground text-sm">2014 - 2019 | GWA: 1.35 (95% in Philippine Grading System)</p>
                 <Separator className="my-4" />
                 <p className="text-sm text-muted-foreground">
                   Focused on software engineering, algorithms, and data structures. 
@@ -194,7 +195,7 @@ function App() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            {/* <Card className="hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-6">
                 <h4 className="font-semibold text-foreground mb-4">Certifications</h4>
                 <div className="space-y-3">
@@ -211,7 +212,7 @@ function App() {
                   ))}
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </section>
 
@@ -221,28 +222,32 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
-                name: 'E-commerce Platform',
-                description: 'Full-stack e-commerce solution with React, Node.js, and Stripe integration',
-                tech: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-                impact: '500K+ users'
-              },
-              {
                 name: 'Analytics Dashboard',
                 description: 'Real-time data visualization platform for business intelligence',
-                tech: ['React', 'D3.js', 'Python', 'AWS'],
+                tech: ['Microsoft Clarity'],
                 impact: '10M+ data points'
               },
               {
-                name: 'Mobile App',
-                description: 'Cross-platform mobile application with React Native',
-                tech: ['React Native', 'Firebase', 'Redux'],
-                impact: '100K+ downloads'
+                name: 'Graphical User Interface for Household and Enterprise printers',
+                description: 'Embedded GUIs for printers built with Yocto project',
+                tech: ['Qt Framework', 'Android', 'Linux', 'Yocto Project'],
+                impact: '100K+ printers'
               },
               {
                 name: 'API Gateway',
                 description: 'Microservices API gateway with rate limiting and authentication',
                 tech: ['Node.js', 'Docker', 'Kubernetes'],
-                impact: '1B+ requests/month'
+                impact: '100K+ requests/month'
+              },
+              {
+                name: 'AI Generated Email Workflow',
+                description: 'Generate Email with Templates and Variables',
+                tech: ['OpenAI', 'NextJS', 'Express']
+              },
+              {
+                name: 'AI Assisted Chat Filtering',
+                description: 'Advanced Filtering for Leads and Prospects',
+                tech: ['OpenAI', 'LangChain Tools and Agents', 'Text Embeddings', 'Elasticsearch', 'PostgreSQL']
               }
             ].map((project, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
@@ -258,10 +263,10 @@ function App() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-medium text-accent">{project.impact}</span>
-                    <Button variant="ghost" size="sm" className="text-primary">
+                    {/* <Button variant="ghost" size="sm" className="text-primary">
                       View Details
                       <ExternalLink className="w-3 h-3 ml-1" />
-                    </Button>
+                    </Button> */}
                   </div>
                 </CardContent>
               </Card>
