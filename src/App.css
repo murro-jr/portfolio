@@ -36,3 +36,9 @@
 .read-the-docs {
   color: #888;
 }
+
+.profile img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 200px;
+}

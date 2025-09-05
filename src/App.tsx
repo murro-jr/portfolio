@@ -3,6 +3,8 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
+import profile from './assets/profile.png';
+import './App.css';
 
 function App() {
   return (
@@ -12,34 +14,27 @@ function App() {
         <div className="max-w-4xl mx-auto px-6 py-8">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
             <div className="relative">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white text-4xl md:text-5xl font-bold shadow-lg">
-                JD
+              <div className="profile">
+                <img src={profile} />
               </div>
               <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-white"></div>
             </div>
             <div className="flex-1 text-center md:text-left">
-              <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">John Doe</h1>
+              <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">John Rexes Murro</h1>
               <h2 className="text-xl md:text-2xl text-muted-foreground mb-4">Senior Software Engineer</h2>
               <p className="text-muted-foreground max-w-2xl mb-6 leading-relaxed">
-                Passionate full-stack developer with 8+ years of experience building scalable web applications. 
-                Expertise in React, Node.js, and cloud technologies with a proven track record of leading high-impact projects.
+                Passionate full-stack developer with 6+ years of experience building impactful software solutions.
+                I bring a strong background in developing and maintaining enterprise applications, API integrations, and AI-driven tools. 
+                With hands-on experience in C/C++, Java, JavaScript, Shell Scripting, and Rust, I have contributed to diverse projects—from firmware development to cloud-deployed web applications.
               </p>
               <div className="flex flex-wrap gap-4 justify-center md:justify-start text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
-                  <span>john.doe@email.com</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Phone className="w-4 h-4" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>jrmurro@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="w-4 h-4" />
-                  <span>San Francisco, CA</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Globe className="w-4 h-4" />
-                  <span>johndoe.dev</span>
+                  <span>Cebu, Philippines</span>
                 </div>
               </div>
             </div>
@@ -70,10 +65,10 @@ function App() {
           <div className="space-y-6">
             {[
               {
-                title: 'Senior Software Engineer',
-                company: 'TechCorp Inc.',
-                period: '2022 - Present',
-                location: 'San Francisco, CA',
+                title: 'Senior Fullstack Software Engineer',
+                company: 'QVantage',
+                period: '2024 - Present',
+                location: 'Singapore',
                 achievements: [
                   'Led a team of 6 developers in building a microservices architecture that improved system performance by 40%',
                   'Architected and implemented a real-time analytics dashboard serving 10M+ daily users',
@@ -81,10 +76,10 @@ function App() {
                 ]
               },
               {
-                title: 'Full Stack Developer',
-                company: 'StartupXYZ',
-                period: '2019 - 2022',
-                location: 'San Francisco, CA',
+                title: 'Software Engineer',
+                company: 'Amdocs',
+                period: '2022 - 2024',
+                location: 'Metro Manila, Philippines',
                 achievements: [
                   'Built the entire frontend using React and TypeScript, increasing user engagement by 35%',
                   'Developed REST APIs with Node.js and PostgreSQL handling 100K+ requests per day',
@@ -92,10 +87,10 @@ function App() {
                 ]
               },
               {
-                title: 'Software Developer',
-                company: 'Digital Agency Co.',
-                period: '2016 - 2019',
-                location: 'Oakland, CA',
+                title: 'Firmware Development Engineer',
+                company: 'Lexmark',
+                period: '2019 - 2022',
+                location: 'Cebu, Philippines',
                 achievements: [
                   'Developed responsive web applications for Fortune 500 clients',
                   'Collaborated with design teams to create pixel-perfect user interfaces',
