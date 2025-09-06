@@ -7,6 +7,8 @@ import profile from './assets/profile.jpg';
 import './App.css';
 import { SendEmail } from './components/custom/sendEmail'
 import { LinkedinReach } from './components/custom/linkedin'
+import { DeepChat } from 'deep-chat-react';
+import { ChatWithAI } from './components/custom/chat'
 
 function App() {
   return (
@@ -272,6 +274,7 @@ function App() {
             ))}
           </div>
         </section>
+        <ChatWithAI />
       </main>
 
       {/* Footer */}
