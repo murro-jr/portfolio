@@ -1,16 +1,18 @@
-import { Mail, Phone, MapPin, Globe, Download, ExternalLink, Calendar, Users, Award, Star } from 'lucide-react'
+import { Mail, Phone, MapPin, Globe, Download, ExternalLink, Calendar, Users, Award, Star, LinkedinIcon } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import profile from './assets/profile.png';
 import './App.css';
+import { SendEmail } from './components/custom/sendEmail'
+import { LinkedinReach } from './components/custom/linkedin'
 
 function App() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background bg-gray-50">
       {/* Header Section */}
-      <header className="bg-white border-b">
+      <header className="bg-sky-700 border-b">
         <div className="max-w-4xl mx-auto px-6 py-8">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
             <div className="relative">
@@ -20,14 +22,14 @@ function App() {
               <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-white"></div>
             </div>
             <div className="flex-1 text-center md:text-left">
-              <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">John Rexes Murro</h1>
-              <h2 className="text-xl md:text-2xl text-muted-foreground mb-4">Senior Software Engineer</h2>
-              <p className="text-muted-foreground max-w-2xl mb-6 leading-relaxed">
+              <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">John Rexes Murro</h1>
+              <h2 className="text-xl md:text-2xl text-white mb-4">Senior Software Engineer</h2>
+              <p className="text-white text-sm mb-6 leading-relaxed">
                 Passionate full-stack developer with 6+ years of experience building impactful software solutions.
                 I bring a strong background in developing and maintaining enterprise applications, API integrations, and AI-driven tools. 
                 With hands-on experience in C/C++, Java, JavaScript, Shell Scripting, and Rust, I have contributed to diverse projects—from firmware development to cloud-deployed web applications.
               </p>
-              <div className="flex flex-wrap gap-4 justify-center md:justify-start text-sm text-muted-foreground">
+              <div className="flex flex-wrap gap-4 justify-center md:justify-start text-sm text-white">
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
                   <span>jrmurro@gmail.com</span>
@@ -39,14 +41,8 @@ function App() {
               </div>
             </div>
             <div className="flex flex-col gap-3">
-              <Button className="flex items-center gap-2">
-                <Download className="w-4 h-4" />
-                Download Resume
-              </Button>
-              <Button variant="outline" className="flex items-center gap-2">
-                <ExternalLink className="w-4 h-4" />
-                View Portfolio
-              </Button>
+              <SendEmail />
+              <LinkedinReach />
             </div>
           </div>
         </div>
@@ -71,7 +67,7 @@ function App() {
                 location: 'Singapore',
                 achievements: [
                   'Developed service routes to integrate Salesforce APIs into the application, includes connecting to Salesforce (OAuth and Tokens), mapping fields to Salesforce Custom Object, and exporting data from app to Salesforce Object.',
-                  'Architected and implemented a real-time analytics dashboard serving 100K+ daily users',
+                  'Architected and implemented a real-time analytics dashboard serving 100K+ monthly users',
                   'Integrated OpenAI and Large Language Model for Text Generation in email workflows',
                   'Implemented AI Agentic System using LangChain Tools and Agents for Automated Chat Filtering with Content Moderation',
                 ]
@@ -276,18 +272,12 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-muted mt-16">
+      <footer className="bg-sky-900 mt-16">
         <div className="max-w-4xl mx-auto px-6 py-8">
           <div className="text-center">
-            <p className="text-muted-foreground mb-4">
+            <p className="text-white mb-4">
               Let's connect and discuss how we can work together
             </p>
-            <div className="flex justify-center gap-4">
-              <Button variant="outline" size="sm">LinkedIn</Button>
-              <Button variant="outline" size="sm">GitHub</Button>
-              <Button variant="outline" size="sm">Twitter</Button>
-              <Button size="sm">Get In Touch</Button>
-            </div>
           </div>
         </div>
       </footer>
