@@ -3,7 +3,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
-import profile from './assets/profile.png';
+import profile from './assets/profile.jpg';
 import './App.css';
 import { SendEmail } from './components/custom/sendEmail'
 import { LinkedinReach } from './components/custom/linkedin'
