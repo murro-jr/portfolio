@@ -65,6 +65,7 @@ function App() {
                 company: 'QVantage',
                 period: '2024 - Present',
                 location: 'Singapore',
+                website: 'https://qvantage.io',
                 achievements: [
                   'Developed service routes to integrate Salesforce APIs into the application, includes connecting to Salesforce (OAuth and Tokens), mapping fields to Salesforce Custom Object, and exporting data from app to Salesforce Object.',
                   'Architected and implemented a real-time analytics dashboard serving 100K+ monthly users',
@@ -77,6 +78,7 @@ function App() {
                 company: 'Amdocs',
                 period: '2022 - 2024',
                 location: 'Metro Manila, Philippines',
+                website: 'https://amdocs.com',
                 achievements: [
                   'Developed and maintained Invoicing/Billing services for TRUEMOVE Thailand and Vodafone Italy.',
                   'Designed, developed and implemented solutions or tools for internal operation.',
@@ -88,6 +90,7 @@ function App() {
                 company: 'Lexmark',
                 period: '2019 - 2022',
                 location: 'Cebu, Philippines',
+                website: 'https://lexmark.com',
                 achievements: [
                   `Developed features for Lexmark laser printer's graphical user interface using Qt Framework and Android.`,
                   'Pioneered the conversion from Lettuce to Robot framework for UI Test Automation.',
@@ -100,7 +103,7 @@ function App() {
                   <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                     <div>
                       <h4 className="text-lg font-semibold text-foreground">{job.title}</h4>
-                      <p className="text-primary font-medium">{job.company}</p>
+                      <p className="text-primary font-medium"><a href={job.website}>{job.company}</a></p>
                     </div>
                     <div className="text-right text-sm text-muted-foreground">
                       <div className="flex items-center gap-1 justify-end">
@@ -182,7 +185,7 @@ function App() {
             <Card className="hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-6">
                 <h4 className="font-semibold text-foreground mb-2">Bachelor of Science in Computer Engineering</h4>
-                <p className="text-primary font-medium mb-2">University of San Carlos</p>
+                <p className="text-primary font-medium mb-2"><a href={'https://usc.edu.ph/'}>University of San Carlos</a></p>
                 <p className="text-muted-foreground text-sm">2014 - 2019 | GWA: 1.35 (95% in Philippine Grading System)</p>
                 <Separator className="my-4" />
                 <p className="text-sm text-muted-foreground">
