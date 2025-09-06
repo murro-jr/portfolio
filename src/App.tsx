@@ -105,7 +105,7 @@ function App() {
                   <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                     <div>
                       <h4 className="text-lg font-semibold text-foreground">{job.title}</h4>
-                      <p className="text-primary font-medium"><a href={job.website}>{job.company}</a></p>
+                      <p className="website text-primary font-medium"><a href={job.website}>{job.company}</a></p>
                     </div>
                     <div className="text-right text-sm text-muted-foreground">
                       <div className="flex items-center gap-1 justify-end">
@@ -187,7 +187,7 @@ function App() {
             <Card className="hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-6">
                 <h4 className="font-semibold text-foreground mb-2">Bachelor of Science in Computer Engineering</h4>
-                <p className="text-primary font-medium mb-2"><a href={'https://usc.edu.ph/'}>University of San Carlos</a></p>
+                <p className="text-primary font-medium mb-2"><a className={'website'} href={'https://usc.edu.ph/'}>University of San Carlos</a></p>
                 <p className="text-muted-foreground text-sm">2014 - 2019 | GWA: 1.35 (95% in Philippine Grading System)</p>
                 <Separator className="my-4" />
                 <p className="text-sm text-muted-foreground">
