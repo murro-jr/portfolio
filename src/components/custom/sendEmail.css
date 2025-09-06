@@ -1,0 +1,13 @@
+.default-email {
+    display: none !important;
+    @media (max-width: 800px) {
+        display: flex !important;
+    }
+}
+
+.gmail {
+    display: none !important;
+    @media (min-width: 801px) {
+        display: flex !important;
+    }
+}

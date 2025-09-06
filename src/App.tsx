@@ -20,8 +20,8 @@ function App() {
             <div className="relative">
               <div className="profile">
                 <img src={profile} />
+                <div className="status w-8 h-8 bg-green-500 rounded-full border-4 border-white"></div>
               </div>
-              <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-white"></div>
             </div>
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">John Rexes Murro</h1>
@@ -72,7 +72,7 @@ function App() {
                   'Developed service routes to integrate Salesforce APIs into the application, includes connecting to Salesforce (OAuth and Tokens), mapping fields to Salesforce Custom Object, and exporting data from app to Salesforce Object.',
                   'Architected and implemented a real-time analytics dashboard serving 100K+ monthly users',
                   'Integrated OpenAI and Large Language Model for Text Generation in email workflows',
-                  'Implemented AI Agentic System using LangChain Tools and Agents for Automated Chat Filtering with Content Moderation',
+                  'Implemented AI Agentic System using LangChain Tools and Agents for Chat-based Filtering of Leads/Prospects with Content Moderation',
                 ]
               },
               {
@@ -241,13 +241,13 @@ function App() {
                 impact: '100K+ requests/month'
               },
               {
-                name: 'AI Generated Email Workflow',
+                name: 'AI-Generated Email Workflow',
                 description: 'Generate Email with Templates and Variables',
                 tech: ['OpenAI', 'NextJS', 'Express']
               },
               {
-                name: 'AI Assisted Chat Filtering',
-                description: 'Advanced Filtering for Leads and Prospects',
+                name: 'AI-Assisted Chat Filtering',
+                description: 'Advanced Filtering for Finding Leads and Prospects',
                 tech: ['OpenAI', 'LangChain Tools and Agents', 'Text Embeddings', 'Elasticsearch', 'PostgreSQL']
               }
             ].map((project, index) => (

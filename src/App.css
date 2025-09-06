@@ -42,3 +42,9 @@
   object-fit: cover;
   width: 200px;
 }
+
+.status {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
