@@ -8,7 +8,10 @@ const ChatWithAI = () => {
     const [showChat, setShowChat] = React.useState(false);
     return (
         <div className='chat'>
-            {showChat && <DeepChat demo={true} />}
+            {showChat && <DeepChat connect={{
+                url: "http://72.60.110.240:3000/api/chat",
+                method: "POST",
+            }} />}
             <Button variant={'outline'} size={'lg'} onClick={() => setShowChat(!showChat)}>
                 <MessageSquareIcon width={40} height={40} onClick={() => setShowChat(!showChat)} />
                 Chat
