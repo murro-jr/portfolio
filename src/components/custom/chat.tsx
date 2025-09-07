@@ -9,7 +9,7 @@ const ChatWithAI = () => {
     return (
         <div className='chat'>
             {showChat && <DeepChat connect={{
-                url: "http://72.60.110.240:3000/api/chat",
+                url: "https://api.rexes.cloud/api/chat",
                 method: "POST",
             }} />}
             <Button variant={'outline'} size={'lg'} onClick={() => setShowChat(!showChat)}>
